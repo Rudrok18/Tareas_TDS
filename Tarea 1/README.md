@@ -1,6 +1,6 @@
 # Nombre del Proyecto
 
-Tarea 1: "Middleware de validación de rol"
+Tarea 1: "Middleware de Validación de Rol"
 
 ## Requisitos
 
