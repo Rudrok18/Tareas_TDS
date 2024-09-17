@@ -17,11 +17,13 @@ Lista de las dependencias necesarias para ejecutar el proyecto:
 
 - Descargar las dependencias necesarias con npm install -D "nombre de la dependencia"
 
-- Ejecutar el comando npm start
+- Ejecutar el comando npm start o con npm run dev para usar nodemon
 
 - En el navegador, ir a http://localhost:3000/users/?key=12345 para ver los usuarios
 
 - En el middleware de autenticación (src/auth.ts), inicialmente se encuentra el ejemplo de admin (con acceso al middleware validation), para comprobar que el middleware validation.ts bloquea a cualquier rol que no sea admin, comenta las líneas 17-25 y descomenta las 26-34
+
+- En caso de haber usado npm start para ejecutar el proyecto, mata la terminal y en una nueva usa el comando npm run scripts para que se guarden los cambios
 
 - Vuelve a ejecutar npm start y actualiza el localhost en el navegador
 
