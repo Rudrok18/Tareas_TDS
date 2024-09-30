@@ -1,0 +1,27 @@
+# Nombre del Proyecto
+
+Tarea 2: "Autenticación de usuario"
+
+## Nota
+
+No logré que funcionara esta tarea, pero no quería dejar la asignación sin entregar nada, envío mi código para visualización únicamente y en caso de ser posible recibir retroalimentación, no recomiendo correrlo. Asumo la responsabilidad de haber subestimado la tarea en cuanto a su complejidad y no lograr dar con el resultado para que corriera correctamente.
+
+## Requisitos
+
+Lista de las dependencias necesarias para ejecutar el proyecto:
+
+- Node.js
+- @types/node
+- npm
+- express
+- @types/express
+- typescript
+- nodemon
+- ts-node
+- mongoose
+- jsonwebtoken
+- @tyes/jsonwebtoken
+- dotenv
+
+# Clona este repositorio
+git clone https://github.com/Rudrok18/Tareas_TDS.git
