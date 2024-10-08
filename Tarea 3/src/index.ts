@@ -1,0 +1,19 @@
+import express, { Request, Response} from 'express';
+import routes from './routes';
+import path from 'path';
+
+const app = express();
+
+const port = process.env.PORT || 3000;
+
+app.get('', (req: Request, res:Response) => {
+    res.send('Api works!');
+});
+
+app.use('/assets', express.static(path.join(__dirname, '..', 'public')));
+
+app.use(routes);
+
+app.listen(port, () => {
+    console.log(`App is running in port ${port}`)
+})

@@ -1,0 +1,35 @@
+# Nombre del Proyecto
+
+Tarea 3: "Crear endpoint para descargar o visualizar archivo"
+
+## Requisitos
+
+Lista de las dependencias necesarias para ejecutar el proyecto:
+
+- Node.js
+- npm
+
+Dependencias a instalar con npm
+
+- express
+- typescript
+- multer
+- nodemon (dev)
+- ts-node (dev)
+- @types/express (dev)
+- @types/multer (dev)
+- @types/node (dev)
+
+
+## Pasos para ejecutar el proyecto
+
+- Ejecutar el comando npm init -y
+
+- Descargar las dependencias necesarias con npm install "nombre de la dependencia" (incluir -D con las dependencias dev)
+
+- Ejecutar el comando npm start o con npm run dev para usar nodemon
+
+- 
+
+# Clona este repositorio
+git clone https://github.com/Rudrok18/Tareas_TDS.git
