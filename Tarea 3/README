@@ -29,7 +29,19 @@ Dependencias a instalar con npm
 
 - Ejecutar el comando npm start o con npm run dev para usar nodemon
 
-- 
+- En postman, en una collección nueva, hacer un nuevo request "POST"
+
+- El URL para el POST es http://localhost:3000/uploads
+
+- En body -> form-data, asignar un nuevo parámetro "docs"
+
+- En "docs" subir los archivos pdf y darle a enviar
+
+- Crea un nuevo request "GET"
+
+- El URL para el GET es http://localhost:3000/download?file=nombre_del_archivo.pdf
+
+
 
 # Clona este repositorio
 git clone https://github.com/Rudrok18/Tareas_TDS.git

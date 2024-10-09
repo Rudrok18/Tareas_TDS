@@ -10,8 +10,6 @@ app.get('', (req: Request, res:Response) => {
     res.send('Api works!');
 });
 
-app.use('/assets', express.static(path.join(__dirname, '..', 'public')));
-
 app.use(routes);
 
 app.listen(port, () => {

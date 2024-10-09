@@ -1,6 +1,8 @@
 import { Router } from 'express';
 import multer from 'multer';
 import upload from '../middlewares/upload';
+import path from 'path';
+import fs from 'fs';
 
 const router = Router();
 
@@ -28,5 +30,22 @@ router.post('/uploads', upload.array('docs'), (req, res) => {
         res.sendStatus(400).send('File not supported')
     }
 })
+
+router.get('/download', (req, res) => {
+    const fileName = req.query.file as string;
+    const filePath = path.join(__dirname, '../../documents', fileName);
+
+    fs.stat(filePath, (err) => {
+        if (err) {
+            return res.status(404).send('File not found');
+        }
+
+        res.download(filePath, (err) => {
+            if (err) {
+                return res.status(500).send('Error downloading file');
+            }
+        });
+    });
+});
 
 export default router;
